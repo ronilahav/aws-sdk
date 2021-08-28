@@ -7,7 +7,9 @@ Buckets and Object creation, deletion and listing.
 ```javascript
 const { createBucket } = require('./libs/s3Commands.js');
 
+
 const bucketName = 'bucket-name';
+
 createBucket(bucketName);
 ```
 
@@ -17,7 +19,9 @@ Items inserting, getting and deleting.
 ```javascript
 const { getItem } = require('./libs/dynamodbCommands.js');
 
+
 const tableName = 'table-name';
 const key = { key: { type: value } }
+
 getItem(tableName, key);
 ```
